@@ -28,6 +28,7 @@ for path in image_paths:
     cv2.imwrite(f"./Output/Part2_{len(images)}_Keypoints.png", image_with_keypoints)
 
     cv2.waitKey(0)
+    cv2.destroyWindow(f"Image {len(images)} with keypoints")
 
 # Stitch images to form panorama
 stitchy = cv2.Stitcher.create()
