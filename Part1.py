@@ -24,12 +24,13 @@ edges_colored = cv2.cvtColor(edges, cv2.COLOR_GRAY2BGR)
 
 # Outline the edges in the original image
 combined_image = cv2.add(image, edges_colored)
+combined_image_rgb = cv2.cvtColor(combined_image, cv2.COLOR_BGR2RGB)
 
 # Display result of Canny edge detection
 plt.figure(figsize=(10, 6))
 plt.subplot(1, 2, 1)
 plt.title("Edge Detection")
-plt.imshow(combined_image)
+plt.imshow(combined_image_rgb)
 plt.axis("off")
 
 # Obtain the binary image from grayscale image
