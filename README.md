@@ -24,11 +24,10 @@
     
     ```python Part1.py```
 
-- The result of edge detection and region segmentation will be displayed. The same will also be saved as 
-    
-    <b>Output/Part1.png</b>
+- The result of edge detection and region segmentation will be displayed. The same will also be saved inside the <b>Output</b> directory.
 
-- The number of coins detected will be displayed on the terminal.
+- The number of coins detected will be displayed on the terminal. Each individual coin's
+portion is extracted from the original image and saved in the <b>Output</b> directory.
 
 ## 2. Panorama Creation
 
@@ -38,6 +37,8 @@
 
 - For all the three input images, the keypoints will be displayed one by one. Press any key on the keyboard to view the keypoints of the next image.
 
+- Next, the matches between the keypoints of adjacent images are shown. Press any key on the keyboard to view the next image.
+
 - At the end, the stitched panorama will be displayed.
 
-- The images with keypoints highlighted, as well as the panorama, will get saved in the <b>Output</b> directory.
+- The images with keypoints highlighted, matching keypoints, and the panorama will get saved in the <b>Output</b> directory.
