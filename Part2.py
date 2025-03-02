@@ -18,6 +18,11 @@ def match_features(images, keypoints, descriptors):
 
         # Draw the first 20 matches
         res = cv2.drawMatches(images[a], keypoints[a], images[b], keypoints[b], matches[:20], None, flags=2)
+        
+        cv2.imshow(f"Matches between images {a + 1} and {b + 1}", res)
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
+
         cv2.imwrite(f"./Output/Part2_Matches_{a + 1}_{b + 1}.png", res)
 
 # Stitch images to form panorama
